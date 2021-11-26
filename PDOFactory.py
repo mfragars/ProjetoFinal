@@ -23,3 +23,6 @@ class DBConnection:
 
     def getCommit(self):
         return self.conn.commit()
+
+    def getCloseConnection(self):
+        return self.conn.close()
